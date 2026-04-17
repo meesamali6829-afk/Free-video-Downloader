@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videos Downloader Free</title>
+    <title>Insta & Fb Video Downloader</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
@@ -38,11 +38,9 @@
         }
 
         /* Platform Icons Styling */
-        .platform-icons { font-size: 24px; margin-bottom: 10px; display: flex; justify-content: center; gap: 15px; }
+        .platform-icons { font-size: 45px; margin-bottom: 10px; display: flex; justify-content: center; gap: 25px; }
         .fa-instagram { color: #E1306C; }
         .fa-facebook { color: #1877F2; }
-        .fa-tiktok { color: #000000; }
-        .fa-snapchat { color: #FFFC00; text-shadow: 0 0 1px #000; }
         .support-notice { background: #fff; border: 1px solid #ddd; padding: 10px; border-radius: 12px; max-width: 300px; margin: 0 auto 20px; font-size: 11px; color: #555; }
 
         @keyframes floatRotate {
@@ -133,16 +131,14 @@
     <div id="home-tab">
         <div class="hero">
             <div class="app-logo">P</div>
-            <h1>Download<br>Pro</h1>
+            <h1>Insta & FB Dowloader</h1>
             
             <div class="platform-icons">
                 <i class="fab fa-instagram"></i>
                 <i class="fab fa-facebook"></i>
-                <i class="fab fa-tiktok"></i>
-                <i class="fab fa-snapchat"></i>
             </div>
             <div class="support-notice">
-                Only Insta, Facebook and other 10 platforms supported but <b>YouTube link legally not allowed</b> policies.
+                Only Insta and Facebook platforms supported. <b>YouTube links are not allowed</b> due to policies.
             </div>
 
             <p class="tagline">Paste a link to preview and download</p>
@@ -150,8 +146,8 @@
 
         <div class="main-container">
             <div class="download-card">
-                <input type="text" id="videoUrl" placeholder="Enter video URL..." oninput="detectYoutube()">
-                <div id="yt-error" class="error-msg">YouTube links are not allowed due to policies.</div>
+                <input type="text" id="videoUrl" placeholder="Enter video URL..." oninput="validateUrl()">
+                <div id="yt-error" class="error-msg">This tool only supports Instagram and Facebook links.</div>
                 <button class="btn-start" id="fetch-btn" onclick="handleFetch('video')">Click and Next Step</button>
                 <button class="btn-mp3" id="mp3-btn" onclick="handleFetch('mp3')"><i class="fa fa-music"></i> Download MP3 Audio</button>
             </div>
@@ -183,7 +179,7 @@
             </div>
             <div class="feat-box">
                 <h4>Zero-Log Policy</h4>
-                <p>Platinum Pro never stores your links on servers.</p>
+                <p>Insta & Fb Video Downloader never stores your links on servers.</p>
             </div>
             <div class="feat-box">
                 <h4>Military Security</h4>
@@ -218,7 +214,7 @@
     </div>
 
     <div id="signup-modal" class="modal">
-        <div class="modal-header">Platinum Membership <span class="back-btn" onclick="closeModals()">BACK</span></div>
+        <div class="modal-header">Membership <span class="back-btn" onclick="closeModals()">BACK</span></div>
         
         <input type="text" id="reg-name" placeholder="Full Name">
         <div id="err-reg-name" class="error-msg">Please enter your name</div>
@@ -238,24 +234,24 @@
     <div id="about-modal" class="modal">
         <div class="modal-header">About Us <span class="back-btn" onclick="closeModals()">BACK</span></div>
         <div class="content-body">
-            <p>Welcome to Platinum Pro, the world's most sophisticated and secure media retrieval utility. Established with a vision to redefine how users interact with digital content, our platform stands at the pinnacle of elite software engineering. At Platinum Pro, we believe that the internet should be a transparent and accessible resource for everyone. Our mission is to provide a seamless, lightning-fast, and high-fidelity experience for users who need to access and preserve media from across the global digital landscape. Our team is comprised of world-class developers, cybersecurity experts, and privacy advocates who are dedicated to breaking down the barriers of digital restrictions while maintaining the highest standards of user safety. </p>
+            <p>Welcome to Insta & Fb Video Downloader, the world's most sophisticated and secure media retrieval utility. Established with a vision to redefine how users interact with digital content, our platform stands at the pinnacle of elite software engineering. At Insta & Fb Video Downloader, we believe that the internet should be a transparent and accessible resource for everyone. Our mission is to provide a seamless, lightning-fast, and high-fidelity experience for users who need to access and preserve media from across the global digital landscape. Our team is comprised of world-class developers, cybersecurity experts, and privacy advocates who are dedicated to breaking down the barriers of digital restrictions while maintaining the highest standards of user safety. </p>
             <br>
-            <p>What sets Platinum Pro apart is our proprietary retrieval technology. We utilize advanced scraping algorithms that can parse complex web structures in milliseconds, ensuring that you get your content in the highest possible resolution. Whether it is 4K video, high-bitrate audio, or detailed metadata, our system handles it all with surgical precision. We operate a global network of high-speed proxy nodes that distribute the load and provide 99.9% uptime, ensuring that our service is available to you 24/7, regardless of your geographical location. We don't just build a simple downloader; we build a comprehensive gateway that empowers you to take control of your favorite memories, educational resources, and professional media assets. </p>
+            <p>What sets Insta & Fb Video Downloader apart is our proprietary retrieval technology. We utilize advanced scraping algorithms that can parse complex web structures in milliseconds, ensuring that you get your content in the highest possible resolution. Whether it is 4K video, high-bitrate audio, or detailed metadata, our system handles it all with surgical precision. We operate a global network of high-speed proxy nodes that distribute the load and provide 99.9% uptime, ensuring that our service is available to you 24/7, regardless of your geographical location. We don't just build a simple downloader; we build a comprehensive gateway that empowers you to take control of your favorite memories, educational resources, and professional media assets. </p>
             <br>
-            <p>Since our inception in 2024, we have served millions of successful requests, constantly evolving our infrastructure to stay ahead of the curve. We take pride in our "Zero-Log" philosophy, ensuring that your digital footprint remains invisible. Our commitment to innovation drives us to integrate features like batch downloading, cloud synchronization, and multi-language support. We thank you for choosing Platinum Pro as your trusted media partner. We promise to keep our interface clean, our speeds unmatched, and our service free from intrusive advertising. Your trust is the foundation of our success, and we will continue to innovate every single day to bring you the best technology the world has to offer.</p>
+            <p>Since our inception in 2024, we have served millions of successful requests, constantly evolving our infrastructure to stay ahead of the curve. We take pride in our "Zero-Log" philosophy, ensuring that your digital footprint remains invisible. Our commitment to innovation drives us to integrate features like batch downloading, cloud synchronization, and multi-language support. We thank you for choosing Insta & Fb Video Downloader as your trusted media partner. We promise to keep our interface clean, our speeds unmatched, and our service free from intrusive advertising. Your trust is the foundation of our success, and we will continue to innovate every single day to bring you the best technology the world has to offer.</p>
         </div>
     </div>
 
     <div id="privacy-modal" class="modal">
         <div class="modal-header">Privacy & Security <span class="back-btn" onclick="closeModals()">BACK</span></div>
         <div class="content-body">
-            <p>At Platinum Pro, your privacy is not just a feature—it is our core fundamental principle. We understand that in the modern digital age, your data is your most valuable asset, and protecting it is our highest priority. We operate under a strict and legally binding Zero-Log Policy. This means that from the moment you visit our site to the moment you complete a download, we do not track, store, collect, or monitor any of your activities. We do not keep records of the URLs you paste, the files you retrieve, or your personal IP address. Our system is designed to be a "pass-through" utility, where data is processed in a volatile memory environment and wiped clean every 60 seconds. </p>
+            <p>At Insta & Fb Video Downloader, your privacy is not just a feature—it is our core fundamental principle. We understand that in the modern digital age, your data is your most valuable asset, and protecting it is our highest priority. We operate under a strict and legally binding Zero-Log Policy. This means that from the moment you visit our site to the moment you complete a download, we do not track, store, collect, or monitor any of your activities. We do not keep records of the URLs you paste, the files you retrieve, or your personal IP address. Our system is designed to be a "pass-through" utility, where data is processed in a volatile memory environment and wiped clean every 60 seconds. </p>
             <br>
-            <p>Our security infrastructure is modeled after military-grade protocols. Every single request made through Platinum Pro is shielded by AES-256 bit end-to-end encryption. This ensure that your Internet Service Provider (ISP), government agencies, or third-party hackers cannot intercept or view your media retrieval activities. We utilize encrypted tunnels to fetch content, masking your identity from source websites. This prevents tracking and profiling by big-tech corporations. Furthermore, our servers are strategically located in privacy-friendly jurisdictions that respect digital anonymity and have strong laws against data overreach. We do not use persistent tracking cookies, and we never sell, rent, or share user metadata with advertisers or data brokers. </p>
+            <p>Our security infrastructure is modeled after military-grade protocols. Every single request made through Insta & Fb Video Downloader is shielded by AES-256 bit end-to-end encryption. This ensure that your Internet Service Provider (ISP), government agencies, or third-party hackers cannot intercept or view your media retrieval activities. We utilize encrypted tunnels to fetch content, masking your identity from source websites. This prevents tracking and profiling by big-tech corporations. Furthermore, our servers are strategically located in privacy-friendly jurisdictions that respect digital anonymity and have strong laws against data overreach. We do not use persistent tracking cookies, and we never sell, rent, or share user metadata with advertisers or data brokers. </p>
             <br>
-            <p>Security at Platinum Pro also means protecting you from external threats. Our system automatically scans every link for malicious scripts, phishing attempts, and malware before processing the download. This provides an extra layer of safety, ensuring that the files you receive are clean and secure. We also employ advanced DDoS protection to ensure our service remains stable and your connection stays uninterrupted. Our security protocols are audited quarterly by independent, third-party cybersecurity firms to ensure we maintain the highest standards of protection in the industry. </p>
+            <p>Security at Insta & Fb Video Downloader also means protecting you from external threats. Our system automatically scans every link for malicious scripts, phishing attempts, and malware before processing the download. This provides an extra layer of safety, ensuring that the files you receive are clean and secure. We also employ advanced DDoS protection to ensure our service remains stable and your connection stays uninterrupted. Our security protocols are audited quarterly by independent, third-party cybersecurity firms to ensure we maintain the highest standards of protection in the industry. </p>
             <br>
-            <p>By using Platinum Pro, you are entering a secured ecosystem designed specifically to shield you from the vulnerabilities of the open web. We believe in digital sovereignty—the right for every individual to control their own digital experience without being watched or exploited. We are dedicated to providing a safe haven for users who value their privacy above all else. Whether you are a professional researcher, a student, or a casual user, you can trust Platinum Pro to handle your requests with absolute confidentiality. We will continue to invest in the latest encryption technologies and privacy-enhancing tools to stay one step ahead of emerging digital threats. Your peace of mind is our mission, and we thank you for trusting us with your digital security.</p>
+            <p>By using Insta & Fb Video Downloader, you are entering a secured ecosystem designed specifically to shield you from the vulnerabilities of the open web. We believe in digital sovereignty—the right for every individual to control their own digital experience without being watched or exploited. We are dedicated to providing a safe haven for users who value their privacy above all else. Whether you are a professional researcher, a student, or a casual user, you can trust Insta & Fb Video Downloader to handle your requests with absolute confidentiality. We will continue to invest in the latest encryption technologies and privacy-enhancing tools to stay one step ahead of emerging digital threats. Your peace of mind is our mission, and we thank you for trusting us with your digital security.</p>
         </div>
     </div>
 
@@ -289,17 +285,26 @@
             if(document.getElementById('sidebar').classList.contains('active')) toggleSidebar();
         }
 
-        function detectYoutube() {
+        function validateUrl() {
             const url = document.getElementById('videoUrl').value.toLowerCase();
             const error = document.getElementById('yt-error');
             const btn1 = document.getElementById('fetch-btn');
             const btn2 = document.getElementById('mp3-btn');
             
-            if(url.includes('youtube.com') || url.includes('youtu.be')) {
-                error.style.display = 'block';
-                document.getElementById('videoUrl').style.borderColor = 'var(--error)';
-                btn1.disabled = true;
-                btn2.disabled = true;
+            if(url.length > 0) {
+                const isSupported = url.includes('instagram.com') || url.includes('facebook.com') || url.includes('fb.watch') || url.includes('fb.com');
+                
+                if(!isSupported) {
+                    error.style.display = 'block';
+                    document.getElementById('videoUrl').style.borderColor = 'var(--error)';
+                    btn1.disabled = true;
+                    btn2.disabled = true;
+                } else {
+                    error.style.display = 'none';
+                    document.getElementById('videoUrl').style.borderColor = '#eee';
+                    btn1.disabled = false;
+                    btn2.disabled = false;
+                }
             } else {
                 error.style.display = 'none';
                 document.getElementById('videoUrl').style.borderColor = '#eee';
@@ -393,7 +398,6 @@
                 btn.innerHTML = originalText;
                 btn.disabled = false;
                 if(data.status === 'success') {
-                    // YAHAN BADLAV: Preview aate hi foran history mein save ho jayega
                     saveToHistory(data);
                     
                     if(type === 'mp3') {
@@ -422,7 +426,6 @@
         function saveToHistory(data) {
             if(!data) return;
             let history = JSON.parse(localStorage.getItem('downloadHistory')) || [];
-            // Duplicate check
             const exists = history.find(h => h.title === data.title);
             if(!exists) {
                 history.unshift({ id: Date.now(), title: data.title, thumbnail: data.thumbnail });
@@ -458,7 +461,7 @@
         function openPlayStore() { window.open('https://play.google.com/store', '_blank'); }
         function shareApp() {
             if (navigator.share) {
-                navigator.share({ title: 'Download Pro', text: 'Best Video Downloader!', url: window.location.href });
+                navigator.share({ title: 'Insta & Fb Video Downloader', text: 'Best Video Downloader!', url: window.location.href });
             } else { alert("Sharing is not supported."); }
         }
     </script>
